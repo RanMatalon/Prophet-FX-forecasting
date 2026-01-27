@@ -1,4 +1,9 @@
 # Prophet-FX-forecasting
+
+**Disclaimer:**
+This model is intended **for educational and analytical purposes only**.
+Financial forecasts produced by Prophet do **not** constitute investment advice and should not be used for trading decisions.
+
 This repository contains a Jupyter Notebook demonstrating time series forecasting using **Meta Prophet**.
 The project focuses on financial time series FX data retrieved via **yfinance** (Yahoo finance) API library.
 
@@ -55,7 +60,7 @@ What are the trade-offs ?
 <img width="932" height="373" alt="image" src="https://github.com/user-attachments/assets/8b50e03f-3398-4f7e-825e-8305b473331d" />
 
 Especially for this need i created the function calculate_optimal_cv_initial, which takes inputs of (data_length,forecast_horizon_days,target_folds,min_ratio,max_initial_days) and
-creates the optimal cv_initial while keeping the constraints of the min_ration.
+creates the optimal cv_initial while keeping the constraints of the min_ratio.
 Can recommand if possible higher folds can be reached, too.
 If target folds are not possible given the data and horizon, there will be fitted a default cv_initial.
 
@@ -65,6 +70,6 @@ The plots describe the trends and different seasonality found, forecasting futur
 A table of forecasting with confidence intervals is added, too.
 
 
-Disclaimer:
+**Disclaimer:**
 This model is intended **for educational and analytical purposes only**.
 Financial forecasts produced by Prophet do **not** constitute investment advice and should not be used for trading decisions.
