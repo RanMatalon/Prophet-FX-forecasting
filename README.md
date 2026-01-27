@@ -66,7 +66,8 @@ If target folds are not possible given the data and horizon, there will be fitte
 
 After the evaluating process, we split a df_train dataframe, that has time_back_window, cuts the last time_back_window days for future backtesting.
 
-The plots describe the trends and different seasonality found, forecasting future records, and residuals distribution analysis.
+The plots describe the trends and different seasonalities found,
+forecasting future records including confidence interval uncertainity (default is 80%), and residuals distribution analysis.
 A table of forecasting with confidence intervals is added, too.
 
 
